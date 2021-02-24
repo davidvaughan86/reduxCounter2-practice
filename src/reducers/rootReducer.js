@@ -5,7 +5,7 @@ const initialState = { // define the initial state as an object, just as the act
     count:0
 }
 
-export default function rootReducer (state=initialState, action){ // 2 arguments state and action. state is defined as initial state which is an object just as the action is an object
+const rootReducer=(state=initialState, action) => { // 2 arguments state and action. state is defined as initial state which is an object just as the action is an object
 
     switch(action.type) {
         case actionTypes.INCREMENT:
@@ -21,3 +21,4 @@ export default function rootReducer (state=initialState, action){ // 2 arguments
      
 }
 
+export default rootReducer
